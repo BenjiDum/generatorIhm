@@ -1,0 +1,11 @@
+<div id="home" class="row" style="padding-top: 20px">
+	<div class="col-lg-12">
+		<div class="list-group">
+		  <a ui-sref="{{menu.state}}" ng-class="{active:menu.state=='home',separator:menu.state==undefined}" class="list-group-item" ng-repeat="menu in menuList">
+		    <h4 class="list-group-item-heading"><i class="{{menu.icon}}"></i> {{menu.name}}</h4>
+		    <p class="list-group-item-text">{{menu.detail}}</p>
+		  </a>
+		</div>
+	</div>
+	<!-- /.col-lg-12 -->
+</div>

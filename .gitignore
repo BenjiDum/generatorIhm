@@ -1,0 +1,12 @@
+.idea
+*.iml
+atlassian-ide-plugin.xml
+target
+bin
+.classpath
+.project
+*~
+frontend/bower_components/*
+mockfrontend/node_modules/*
+**/.DS_Store
+

@@ -1,0 +1,71 @@
+<alert id="steperrors" ng-repeat="alert in alerts" type="danger" close="closeAlert($index)">{{alert.msg}}</alert>
+<div ng-include src="'modules/generator/generator.editAnnotation.partial.html'"></div>
+<br/>
+
+<div>
+
+    <form>
+
+        <div class="page-header">
+            <h1>Object Properties</h1>
+        </div>
+
+        <label for="objectName">Object Name : </label>
+        <input type="string" class="form-control" id="objectName" placeholder="objectName" ng-model="objectToGenerate.name">
+        <br/>
+        <label for="objectPackageName">Object package name : </label>
+        <input type="string" class="form-control" id="objectPackageName" placeholder="object Package Name" ng-model="objectToGenerate.packageName">
+        <br/>
+        <label for="angularModuleName">Angular Module name : </label>
+        <input type="string" class="form-control" id="angularModuleName" placeholder="Angular Module name" ng-model="objectToGenerate.angularModuleName">
+        <br/>
+        <div>
+            <div class="col-md-4">
+                <label for="objectIsAudited">Object auditable ? :</label>
+            </div>
+            <div class="checkbox col-md-8">
+                <input type="checkbox" id="objectIsAudited" ng-model="objectToGenerate.isAudited" value="objectToGenerate.isAudited">
+            </div>
+        </div>
+        <!--
+            <label for="comment">Edit pour PJ : </label>
+            <textarea class="form-control" rows="5" id="comment" ng-model="objectToGenerate"></textarea>
+            <br/>
+        -->
+        <div class="page-header">
+            <h1>Object Attributes</h1>
+        </div>
+
+        <div class="col-md-12">
+            <button class="btn btn-success" ng-click="addAttribute()">Add Attribute</button>
+            <button ng-click="generateCode()" class="btn btn-success">GENERATE</button>
+        </div>
+        <br/>
+        <br/>
+        <br/>
+        <row ng-repeat="attributeTab in objectToGenerate.attributes">
+            <div class="col-md-4">
+                <input type="string" class="form-control"  placeholder="attribute Name" ng-model="attributeTab.name">
+            </div>
+            <div class="col-md-4">
+                <input type="string" class="form-control"  placeholder="attribute Type" ng-model="attributeTab.type">
+            </div>
+            <div class="col-md-2">
+                <div class="checkbox">
+                    <label><input ng-model="attributeTab.isList" type="checkbox"></label>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <button class="btn btn-success btn-sm glyphicon glyphicon-zoom-in" ng-click="openAnnotationModal(attributeTab)"></button>
+                <button class="btn btn-danger btn-sm glyphicon glyphicon-trash" ng-click="rmAttribute(attributeTab)"></button>
+            </div>
+        </row>
+        <br/>
+        <br/>
+        <br/>
+
+    </form>
+    <!--
+    {{objectToGenerate}}
+    -->
+</div>

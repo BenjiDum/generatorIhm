@@ -1,0 +1,181 @@
+{"menuList" :
+	[{
+		"name" : "Welcome to NewBiz !",
+		"state" : "home",
+		"icon" : "fa fa-home fa-fw"
+	},
+
+
+	{
+		"name" : "Vehicle"
+	},
+	{
+		"name" : "Vehicle Information",
+		"icon" : "fa fa-dashboard fa-fw",
+		"state" : "vehicle",
+		"statNameControl" : "vehicle",
+		"detail" : "Search, list vehicle information"
+	},
+	{
+        "name" : "Drivers"
+    },
+    {
+        "name" : "Drivers Information",
+        "icon" : "fa fa-dashboard fa-fw",
+        "state" : "driver",
+        "statNameControl" : "driver",
+        "detail" : "Search, list drivers information"
+    },
+    {
+        "name" : "Traductions"
+    },
+    {
+        "name" : "Traductions Information",
+        "icon" : "fa fa-dashboard fa-fw",
+        "state" : "electrumTraductibleElement",
+        "statNameControl" : "electrumTraductibleElement",
+        "detail" : "Search, list traductions information"
+    },
+    {
+        "name" : "Offer"
+    },
+    {
+        "name" : "Offer Information",
+        "icon" : "fa fa-dashboard fa-fw",
+        "state" : "offer",
+        "statNameControl" : "offer/offer",
+        "detail" : "Search, list, edit offer information"
+    },
+    {
+        "name" : "Lever and Brick Info",
+        "icon" : "fa fa-dashboard fa-fw",
+        "state" : "brick",
+        "statNameControl" : "offer/brick",
+        "detail" : "Search, list, edit brick information"
+    },
+    {
+        "name" : "Contract Management"
+    },
+    {
+        "name" : "Customer",
+        "icon" : "fa fa-dashboard fa-fw",
+        "state" : "newbizCustomer",
+        "statNameControl" : "admin/newbizCustomer",
+        "detail" : "Search, list, edit Newbiz customer"
+    },
+    {
+        "name" : "Groups Information",
+        "icon" : "fa fa-dashboard fa-fw",
+        "state" : "groups",
+        "statNameControl" : "admin/groups",
+        "detail" : "Search, list, edit groups information"
+    },
+    {
+        "name" : "Electrum Param Seuil",
+        "icon" : "fa fa-dashboard fa-fw",
+        "state" : "electrumParamSeuil",
+        "statNameControl" : "admin/electrumParamSeuil",
+        "detail" : "Search, list, edit Electrum Param Seuil"
+    },
+    {
+        "name" : "Service Provider"
+    },
+    {
+        "name" : "Head Office",
+        "icon" : "fa fa-dashboard fa-fw",
+        "state" : "spHeadOffice",
+        "statNameControl" : "admin/serviceProvider/spHeadOffice",
+        "detail" : "Search, list, edit Head Office"
+    },
+    {
+        "name" : "Agency",
+        "icon" : "fa fa-dashboard fa-fw",
+        "state" : "spAgency",
+        "statNameControl" : "admin/serviceProvider/spAgency",
+        "detail" : "Search, list, edit Agency"
+    },
+    {
+        "name" : "Delivery Site",
+        "icon" : "fa fa-dashboard fa-fw",
+        "state" : "spDeliverySite",
+        "statNameControl" : "admin/serviceProvider/spDeliverySite",
+        "detail" : "Search, list, edit Delivery Site"
+    },
+    {
+        "name" : "Contacts",
+        "icon" : "fa fa-dashboard fa-fw",
+        "state" : "spContacts",
+        "statNameControl" : "admin/serviceProvider/spContacts",
+        "detail" : "Search, list, edit Contacts"
+    },
+    {
+        "name" : "Stock Management"
+    },
+    {
+        "name" : "Local Stock",
+        "icon" : "fa fa-dashboard fa-fw",
+        "state" : "localStock",
+        "statNameControl" : "localStock",
+        "detail" : "Compiled Local Stock information"
+    },
+    {
+        "name" : "Central Stock",
+        "icon" : "fa fa-dashboard fa-fw",
+        "state" : "centralStock",
+        "statNameControl" : "centralStock",
+        "detail" : "Central GEFCO Stock information"
+    },
+    {
+        "name" : "Delivery Note LDL",
+        "icon" : "fa fa-dashboard fa-fw",
+        "state" : "centralStockLine",
+        "statNameControl" : "centralStockLine",
+        "detail" : "Central LDL Delivery Note Information"
+    },
+	{
+		"name" : "Admin"
+	},
+    {
+        "name" : "Article",
+        "icon" : "fa fa-dashboard fa-fw",
+        "state" : "article",
+        "statNameControl" : "article",
+        "detail" : "Search, list article information"
+    },
+    {
+        "name" : "Equipment Service",
+        "icon" : "fa fa-dashboard fa-fw",
+        "state" : "equipmentService",
+        "statNameControl" : "equipmentService",
+        "detail" : "Search, list equipmentService information"
+    },
+	{
+        "name" : "Language Information",
+        "icon" : "fa fa-dashboard fa-fw",
+        "state" : "electrumLanguage",
+        "statNameControl" : "admin/electrumLanguage",
+        "detail" : "Search, list, edit Language information"
+    },
+    {
+        "name" : "Analysis Parameters",
+        "icon" : "fa fa-dashboard fa-fw",
+        "state" : "analysisParameter",
+        "statNameControl" : "admin/analysisParameter",
+        "detail" : "Search, list, edit Analysis Parameters"
+    },
+	{
+        "name" : "Upload File",
+    	"icon" : "fa fa-dashboard fa-fw",
+    	"state" : "uploadFile",
+    	"statNameControl" : "admin/uploadFile",
+    	"detail" : "Upload configuration files"
+    },
+    {
+        "name" : "Upload File Report",
+        "icon" : "fa fa-dashboard fa-fw",
+        "state" : "importFileSummary",
+        "statNameControl" : "admin/importFileSummary",
+        "detail" : "Upload File Report"
+    }
+	]
+}

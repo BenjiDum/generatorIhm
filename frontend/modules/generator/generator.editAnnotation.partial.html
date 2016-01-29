@@ -1,0 +1,44 @@
+
+<script type="text/ng-template" id="generatorEditAnnotation.html">
+    <div class="modal-header">
+		<div class="button-close"><button class="btn btn-danger glyphicon glyphicon-remove" ng-click="cancel()" ></button></div>
+        <h3 class="modal-title">Edit your attribute annotations</h3>
+    </div>
+    <div class="simple-form">
+        <!--
+        {{selectedAttribute}}
+        -->
+        <div class="modal-body">
+
+            <row ng-repeat="annotation in selectedAttribute.annotations">
+                <row>
+                    <div class="col-md-10">
+                        <input type="string" class="form-control"  placeholder="annotation Name" ng-model="annotation.name">
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-success btn-sm glyphicon glyphicon-plus-sign" ng-click="addAnnotationParam(annotation)"></button>
+                        <button class="btn btn-danger btn-sm glyphicon glyphicon-trash" ng-click="rmAnnotation(annotation)"></button>
+                    </div>
+                </row>
+                <row ng-if="annotation.hasParam" ng-repeat="annotationParam in annotation.parameters">
+                    <div class="col-md-5">
+                        <input type="string" class="form-control"  placeholder="Param Name" ng-model="annotationParam.name">
+                    </div>
+                    <div class="col-md-5">
+                        <input type="string" class="form-control"  placeholder="Param Value" ng-model="annotationParam.value">
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-danger btn-sm glyphicon glyphicon-trash" ng-click="rmAnnotationParam(annotation, annotationParam)"></button>
+                    </div>
+                </row>
+            </row>
+
+
+        </div>
+        <div class="modal-footer">
+            <button title="addAnnot" class="btn btn-success glyphicon glyphicon-plus-sign" ng-click="addAnnotation()"></button>
+            <button title="Validate" type="submit" class="btn btn-success glyphicon glyphicon-ok" ng-click="save(selectedAttribute)"></button>
+            <button title="Cancel" class="btn btn-cancel glyphicon glyphicon-new-window" ng-click="cancel()"></button>
+        </div>
+    </div>
+</script>
